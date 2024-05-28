@@ -8,7 +8,9 @@ JoyBookDirectory iOS app allows users to see recent popular books, search for bo
 # Features
 ----------
 ~ Login and Register -> Users can register accounts and log in securely.
+
 ~ Book Search -> Users can search for books and preview its details
+
 ~ Local Database -> CoreData is used to store user register information locally.
 
 
