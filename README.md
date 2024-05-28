@@ -7,19 +7,19 @@ JoyBookDirectory iOS app allows users to see recent popular books, search for bo
 
 # Features
 ----------
-1 - Login and Register -> Users can register accounts and log in securely.
-2 - Book Search -> Users can search for books and preview its details
-3 - Local Database -> CoreData is used to store user register information locally.
+~ Login and Register -> Users can register accounts and log in securely.
+~ Book Search -> Users can search for books and preview its details
+~ Local Database -> CoreData is used to store user register information locally.
 
 
 # Third-Party Pods
 ------------------
-1 - IQKeyboardManagerSwift: For easier keyboard management.
-2 - Kingfisher: For downloading and caching images from the web.
-3 - Alamofire: For networking requests.
-4 - PromiseKit: For simplifying and chaining asynchronous tasks.
-5 - ObjectMapper: For easy mapping of JSON data to objects.
-6 - SwiftyJSON: For simpler JSON parsing in Swift.
+~ IQKeyboardManagerSwift: For easier keyboard management.
+~ Kingfisher: For downloading and caching images from the web.
+~ Alamofire: For networking requests.
+~ PromiseKit: For simplifying and chaining asynchronous tasks.
+~ ObjectMapper: For easy mapping of JSON data to objects.
+~ SwiftyJSON: For simpler JSON parsing in Swift.
 
 
 # Installation
