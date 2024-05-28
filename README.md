@@ -9,7 +9,7 @@ JoyBookDirectory iOS app allows users to see recent popular books, search for bo
 ----------
 ~ Login and Register -> Users can register accounts and log in securely.
 
-~ Book Search -> Users can search for books and preview its details
+~ Book Search -> Users can search for books and preview its details.
 
 ~ Local Database -> CoreData is used to store user register information locally.
 
@@ -28,16 +28,16 @@ JoyBookDirectory iOS app allows users to see recent popular books, search for bo
 
 ~ SwiftyJSON: For simpler JSON parsing in Swift.
 
-~ CoreData(Internal Package) -> To Store User Registered Data Locally
+~ CoreData(Internal Package): To Store User Registered Data Locally.
 
 
 # Installation
 --------------
 1 - Clone the repository.
 
-2 - Run pod install to install the required pods.
+2 - Run 'pod install' command in terminal(p.s: must be within project directory) to install the required pods.
 
-3 - Open JoyBookDirectory.xcworkspace.
+3 - Then, Open JoyBookDirectory.xcworkspace file.
 
 
 # Setup
@@ -46,7 +46,7 @@ JoyBookDirectory iOS app allows users to see recent popular books, search for bo
 
 2 - Open JoyBookDirectory.xcworkspace.
 
-3 - Build and run the app on a simulator or your desired physical device.
+3 - Build and run the app on a simulator or your desired physical devices.
 
 
 # Usage
