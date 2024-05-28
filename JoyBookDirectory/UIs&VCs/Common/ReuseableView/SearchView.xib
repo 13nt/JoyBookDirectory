@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="32700.99.1234" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22684"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SearchView" customModule="JoyBookDirectory" customModuleProvider="target">
+            <connections>
+                <outlet property="searchTF" destination="7zf-pl-py2" id="wLa-cw-bwz"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" id="V2d-Ux-ijn">
+            <rect key="frame" x="0.0" y="0.0" width="393" height="50"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NGQ-tj-alh">
+                    <rect key="frame" x="0.0" y="0.0" width="393" height="50"/>
+                    <subviews>
+                        <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="9bj-ab-LEP">
+                            <rect key="frame" x="10" y="0.0" width="373" height="50"/>
+                            <subviews>
+                                <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Search by Category(eg: Python)" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="7zf-pl-py2" customClass="SearchTextField" customModule="VictoriaSMS" customModuleProvider="target">
+                                    <rect key="frame" x="0.0" y="0.0" width="373" height="50"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="50" id="ZXC-7b-mPc"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="14"/>
+                                    <textInputTraits key="textInputTraits" returnKeyType="search"/>
+                                </textField>
+                            </subviews>
+                        </stackView>
+                    </subviews>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="9bj-ab-LEP" secondAttribute="trailing" constant="10" id="3BR-yW-iFk"/>
+                        <constraint firstItem="9bj-ab-LEP" firstAttribute="leading" secondItem="NGQ-tj-alh" secondAttribute="leading" constant="10" id="7HT-zW-Onb"/>
+                        <constraint firstAttribute="bottom" secondItem="9bj-ab-LEP" secondAttribute="bottom" id="vRa-7r-Zs9"/>
+                        <constraint firstItem="9bj-ab-LEP" firstAttribute="top" secondItem="NGQ-tj-alh" secondAttribute="top" id="xRn-4o-CBU"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="jEY-Jo-waj"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="jEY-Jo-waj" firstAttribute="trailing" secondItem="NGQ-tj-alh" secondAttribute="trailing" id="QG9-1i-iPF"/>
+                <constraint firstAttribute="bottom" secondItem="NGQ-tj-alh" secondAttribute="bottom" id="dBr-uo-QML"/>
+                <constraint firstItem="NGQ-tj-alh" firstAttribute="top" secondItem="V2d-Ux-ijn" secondAttribute="top" id="qMS-th-9U8"/>
+                <constraint firstItem="NGQ-tj-alh" firstAttribute="leading" secondItem="jEY-Jo-waj" secondAttribute="leading" id="u11-px-RNr"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="-206.87022900763358" y="-919.0140845070423"/>
+        </view>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

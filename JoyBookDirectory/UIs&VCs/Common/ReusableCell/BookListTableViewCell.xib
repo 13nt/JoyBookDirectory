@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="32700.99.1234" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22684"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="121" id="EKq-z8-3Ks" customClass="BookListTableViewCell" customModule="JoyBookDirectory" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="422" height="258"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="EKq-z8-3Ks" id="CXl-E6-kFa">
+                <rect key="frame" x="0.0" y="0.0" width="422" height="258"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7oG-hR-tcF" customClass="RoundedShadowView" customModule="JoyBookDirectory" customModuleProvider="target">
+                        <rect key="frame" x="10" y="5" width="402" height="163"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="RKm-Hd-4gB">
+                                <rect key="frame" x="10" y="10" width="100" height="143"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="7n2-ZZ-pZf"/>
+                                </constraints>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="k7v-tQ-d5W">
+                                <rect key="frame" x="120" y="10" width="272" height="143"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="Kmb-yO-79w">
+                                        <rect key="frame" x="0.0" y="0.0" width="272" height="32"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="-" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6SH-Px-aP7">
+                                                <rect key="frame" x="0.0" y="0.0" width="272" height="32"/>
+                                                <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="16"/>
+                                                <color key="textColor" systemColor="systemOrangeColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="HzW-kC-PML">
+                                        <rect key="frame" x="0.0" y="37" width="272" height="32"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="-" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oba-l8-bch">
+                                                <rect key="frame" x="0.0" y="0.0" width="272" height="32"/>
+                                                <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="14"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="gNq-09-afa">
+                                        <rect key="frame" x="0.0" y="74" width="272" height="32"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="-" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9mm-3b-eRC">
+                                                <rect key="frame" x="0.0" y="0.0" width="272" height="32"/>
+                                                <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="12"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="right" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OWp-8D-Dfu">
+                                        <rect key="frame" x="0.0" y="111" width="272" height="32"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="40" id="pvj-Ru-22D"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="14"/>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                        <state key="normal" title="Book's Detail"/>
+                                        <connections>
+                                            <action selector="bookDetailBtnClicked:" destination="EKq-z8-3Ks" eventType="touchUpInside" id="gxS-dN-phM"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="Kmb-yO-79w" secondAttribute="trailing" id="3Uy-5S-auE"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="k7v-tQ-d5W" firstAttribute="bottom" secondItem="RKm-Hd-4gB" secondAttribute="bottom" id="Q8V-Sb-vsG"/>
+                            <constraint firstAttribute="trailing" secondItem="k7v-tQ-d5W" secondAttribute="trailing" constant="10" id="UdG-n9-y4E"/>
+                            <constraint firstAttribute="bottom" secondItem="RKm-Hd-4gB" secondAttribute="bottom" constant="10" id="Ul4-fk-6PP"/>
+                            <constraint firstItem="k7v-tQ-d5W" firstAttribute="leading" secondItem="RKm-Hd-4gB" secondAttribute="trailing" constant="10" id="c0r-MJ-gtE"/>
+                            <constraint firstItem="RKm-Hd-4gB" firstAttribute="leading" secondItem="7oG-hR-tcF" secondAttribute="leading" constant="10" id="gOv-ly-ity"/>
+                            <constraint firstItem="RKm-Hd-4gB" firstAttribute="top" secondItem="7oG-hR-tcF" secondAttribute="top" constant="10" id="lqR-EQ-nzk"/>
+                            <constraint firstItem="k7v-tQ-d5W" firstAttribute="top" secondItem="7oG-hR-tcF" secondAttribute="top" constant="10" id="z8W-Gk-HNl"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                <color key="value" systemColor="opaqueSeparatorColor"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                <real key="value" value="0.5"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <real key="value" value="10"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="7oG-hR-tcF" secondAttribute="bottom" constant="5" id="Qwr-6y-KjK"/>
+                    <constraint firstAttribute="trailing" secondItem="7oG-hR-tcF" secondAttribute="trailing" constant="10" id="ZHD-Pp-UBx"/>
+                    <constraint firstItem="7oG-hR-tcF" firstAttribute="top" secondItem="CXl-E6-kFa" secondAttribute="top" constant="5" id="fE8-6O-B76"/>
+                    <constraint firstItem="7oG-hR-tcF" firstAttribute="leading" secondItem="CXl-E6-kFa" secondAttribute="leading" constant="10" id="yVq-f2-xR2"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="bgView" destination="7oG-hR-tcF" id="ZQu-Tt-3XG"/>
+                <outlet property="bookAuthor" destination="9mm-3b-eRC" id="DXL-6Z-mBe"/>
+                <outlet property="bookImage" destination="RKm-Hd-4gB" id="tjd-Bu-3Lr"/>
+                <outlet property="bookSubTitle" destination="oba-l8-bch" id="io1-1D-aek"/>
+                <outlet property="bookTitle" destination="6SH-Px-aP7" id="2P2-0I-mHc"/>
+            </connections>
+            <point key="canvasLocation" x="97.70992366412213" y="-107.74647887323944"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <systemColor name="opaqueSeparatorColor">
+            <color red="0.77647058820000003" green="0.77647058820000003" blue="0.7843137255" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemOrangeColor">
+            <color red="1" green="0.58431372550000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

@@ -1,0 +1,277 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="32700.99.1234" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="1F7-QX-rZz">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22684"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--HomeVC-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController storyboardIdentifier="HomeVC" id="BYZ-38-t0r" customClass="HomeVC" customModule="JoyBookDirectory" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fAS-de-KjF" customClass="TopNavView" customModule="JoyBookDirectory" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="0.0" width="393" height="90"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="90" id="R7M-LR-0JX"/>
+                                </constraints>
+                            </view>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="rlK-b6-i4d">
+                                <rect key="frame" x="0.0" y="90" width="393" height="679"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemGray6Color"/>
+                        <constraints>
+                            <constraint firstItem="rlK-b6-i4d" firstAttribute="top" secondItem="fAS-de-KjF" secondAttribute="bottom" id="C8x-HM-i9S"/>
+                            <constraint firstItem="fAS-de-KjF" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="IbP-L9-YWm"/>
+                            <constraint firstItem="fAS-de-KjF" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="VAK-Lj-oRD"/>
+                            <constraint firstItem="rlK-b6-i4d" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="c7M-ki-0PU"/>
+                            <constraint firstItem="rlK-b6-i4d" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="oTX-gB-v9k"/>
+                            <constraint firstAttribute="trailing" secondItem="fAS-de-KjF" secondAttribute="trailing" id="s4i-aq-ltN"/>
+                            <constraint firstAttribute="trailing" secondItem="rlK-b6-i4d" secondAttribute="trailing" id="yws-JP-mHg"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="3MZ-zN-NcE"/>
+                    <nil key="simulatedTopBarMetrics"/>
+                    <connections>
+                        <outlet property="bookListTableView" destination="rlK-b6-i4d" id="4Vn-nJ-6e7"/>
+                        <outlet property="topView" destination="fAS-de-KjF" id="eJx-FB-9oy"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1993.1297709923663" y="3.5211267605633805"/>
+        </scene>
+        <!--Book Detail-->
+        <scene sceneID="0E8-L0-4P2">
+            <objects>
+                <viewController storyboardIdentifier="BookDetailVC" hidesBottomBarWhenPushed="YES" id="j9r-tT-Grs" customClass="BookDetailVC" customModule="JoyBookDirectory" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="0jK-4w-rlv">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="iGR-vM-kox">
+                                <rect key="frame" x="0.0" y="59" width="393" height="759"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="E9W-hq-kvg">
+                                        <rect key="frame" x="10" y="10" width="373" height="180"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="180" id="6S7-0e-X77"/>
+                                        </constraints>
+                                    </imageView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="bKS-BR-GHG">
+                                        <rect key="frame" x="10" y="200" width="373" height="161"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="hQo-sT-VLm">
+                                                <rect key="frame" x="0.0" y="0.0" width="373" height="22.666666666666668"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="-" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LaQ-6q-Dk0">
+                                                        <rect key="frame" x="0.0" y="0.0" width="373" height="22.666666666666668"/>
+                                                        <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="16"/>
+                                                        <color key="textColor" systemColor="systemOrangeColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="J3g-ER-xel">
+                                                <rect key="frame" x="0.0" y="27.666666666666686" width="373" height="22.666666666666671"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="-" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="n8L-Tl-feL">
+                                                        <rect key="frame" x="0.0" y="0.0" width="373" height="22.666666666666668"/>
+                                                        <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="14"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="qS9-ay-ahG">
+                                                <rect key="frame" x="0.0" y="55.333333333333307" width="373" height="22.666666666666664"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Author :" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZLC-N4-RNJ">
+                                                        <rect key="frame" x="0.0" y="0.0" width="70" height="22.666666666666668"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" constant="70" id="fSW-j7-XTt"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="12"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="-" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="u2N-Hl-dr2">
+                                                        <rect key="frame" x="80" y="0.0" width="293" height="22.666666666666668"/>
+                                                        <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="12"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="Fgi-Y8-Rbc">
+                                                <rect key="frame" x="0.0" y="83" width="373" height="22.666666666666671"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Publisher :" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mOx-NR-NFT">
+                                                        <rect key="frame" x="0.0" y="0.0" width="70" height="22.666666666666668"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" constant="70" id="ew7-ay-Sl5"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="12"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="-" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZTG-Nm-jzq">
+                                                        <rect key="frame" x="80" y="0.0" width="293" height="22.666666666666668"/>
+                                                        <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="12"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="IQm-L2-Vud">
+                                                <rect key="frame" x="0.0" y="110.66666666666669" width="373" height="22.666666666666657"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pages :" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lsK-yi-kMO">
+                                                        <rect key="frame" x="0.0" y="0.0" width="70" height="22.666666666666668"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" constant="70" id="bB0-ib-u5c"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="12"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="-" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IAJ-Qf-xjV">
+                                                        <rect key="frame" x="80" y="0.0" width="293" height="22.666666666666668"/>
+                                                        <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="12"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="lQM-Ba-eRU">
+                                                <rect key="frame" x="0.0" y="138.33333333333331" width="373" height="22.666666666666657"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Year :" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dUN-Kl-P6V">
+                                                        <rect key="frame" x="0.0" y="0.0" width="70" height="22.666666666666668"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" constant="70" id="uo1-ZH-fve"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="12"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="-" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VJv-gp-gKk">
+                                                        <rect key="frame" x="80" y="0.0" width="293" height="22.666666666666668"/>
+                                                        <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="12"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                            </stackView>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstAttribute="trailing" secondItem="hQo-sT-VLm" secondAttribute="trailing" id="lUE-Ah-sYN"/>
+                                        </constraints>
+                                    </stackView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="-" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jph-NJ-iyq">
+                                        <rect key="frame" x="10" y="371" width="373" height="20"/>
+                                        <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="14"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="Jph-NJ-iyq" firstAttribute="top" secondItem="bKS-BR-GHG" secondAttribute="bottom" constant="10" id="40V-3a-clA"/>
+                                    <constraint firstAttribute="trailing" secondItem="E9W-hq-kvg" secondAttribute="trailing" constant="10" id="PrV-ui-b4o"/>
+                                    <constraint firstAttribute="trailing" secondItem="bKS-BR-GHG" secondAttribute="trailing" constant="10" id="VTa-xG-6XN"/>
+                                    <constraint firstAttribute="bottom" secondItem="Jph-NJ-iyq" secondAttribute="bottom" constant="10" id="VdL-K1-MaQ"/>
+                                    <constraint firstItem="Jph-NJ-iyq" firstAttribute="trailing" secondItem="bKS-BR-GHG" secondAttribute="trailing" id="aCy-HA-m7P"/>
+                                    <constraint firstItem="E9W-hq-kvg" firstAttribute="top" secondItem="iGR-vM-kox" secondAttribute="top" constant="10" id="bcv-97-O5c"/>
+                                    <constraint firstItem="bKS-BR-GHG" firstAttribute="top" secondItem="E9W-hq-kvg" secondAttribute="bottom" constant="10" id="dGG-75-7uJ"/>
+                                    <constraint firstItem="bKS-BR-GHG" firstAttribute="leading" secondItem="iGR-vM-kox" secondAttribute="leading" constant="10" id="hhk-nT-G1U"/>
+                                    <constraint firstItem="E9W-hq-kvg" firstAttribute="leading" secondItem="iGR-vM-kox" secondAttribute="leading" constant="10" id="mxK-64-cpT"/>
+                                    <constraint firstItem="bKS-BR-GHG" firstAttribute="centerX" secondItem="iGR-vM-kox" secondAttribute="centerX" id="w4e-p0-7j6"/>
+                                    <constraint firstItem="Jph-NJ-iyq" firstAttribute="leading" secondItem="bKS-BR-GHG" secondAttribute="leading" id="y6K-9n-Xsh"/>
+                                </constraints>
+                            </scrollView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="e0A-L0-pKr"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="e0A-L0-pKr" firstAttribute="bottom" secondItem="iGR-vM-kox" secondAttribute="bottom" id="6Jz-5k-yk4"/>
+                            <constraint firstItem="e0A-L0-pKr" firstAttribute="trailing" secondItem="iGR-vM-kox" secondAttribute="trailing" id="LU0-jZ-4q4"/>
+                            <constraint firstItem="iGR-vM-kox" firstAttribute="top" secondItem="e0A-L0-pKr" secondAttribute="top" id="Y5L-X8-ckl"/>
+                            <constraint firstItem="iGR-vM-kox" firstAttribute="leading" secondItem="e0A-L0-pKr" secondAttribute="leading" id="xwC-79-tck"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Book Detail" id="JTK-ig-xMq"/>
+                    <connections>
+                        <outlet property="bookAuthor" destination="u2N-Hl-dr2" id="VtE-fp-y4n"/>
+                        <outlet property="bookDescription" destination="Jph-NJ-iyq" id="pLp-wA-ZHv"/>
+                        <outlet property="bookImage" destination="E9W-hq-kvg" id="UAR-78-jAV"/>
+                        <outlet property="bookNoOfPages" destination="IAJ-Qf-xjV" id="nZt-Xx-RZe"/>
+                        <outlet property="bookPublishedYear" destination="VJv-gp-gKk" id="STk-LE-oZq"/>
+                        <outlet property="bookPublisher" destination="ZTG-Nm-jzq" id="Edf-FG-fCO"/>
+                        <outlet property="bookSubTitle" destination="n8L-Tl-feL" id="nLB-Kl-ZF5"/>
+                        <outlet property="bookTitle" destination="LaQ-6q-Dk0" id="ICb-ry-dHG"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="OoR-sc-pBo" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2831.2977099236641" y="3.5211267605633805"/>
+        </scene>
+        <!--Base Tab Bar Controller-->
+        <scene sceneID="KbJ-PJ-2Ub">
+            <objects>
+                <tabBarController storyboardIdentifier="BaseTabBarController" automaticallyAdjustsScrollViewInsets="NO" id="1F7-QX-rZz" customClass="BaseTabBarController" customModule="JoyBookDirectory" customModuleProvider="target" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="BRg-tJ-w04">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="ZaR-As-00W" kind="relationship" relationship="viewControllers" id="2BM-Ew-yPZ"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fZB-9m-Ir1" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="139.69465648854961" y="3.5211267605633805"/>
+        </scene>
+        <!--Base Navigation Controller-->
+        <scene sceneID="E43-0V-AVt">
+            <objects>
+                <navigationController storyboardIdentifier="BaseNavigationController" automaticallyAdjustsScrollViewInsets="NO" id="ZaR-As-00W" customClass="BaseNavigationController" customModule="JoyBookDirectory" customModuleProvider="target" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" systemItem="recents" id="egy-1Z-vYO"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="26b-yb-Hdl">
+                        <rect key="frame" x="0.0" y="59" width="393" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="T0Q-vc-O7a"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="39q-EX-qQJ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1066.4122137404579" y="3.5211267605633805"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGray6Color">
+            <color red="0.94901960780000005" green="0.94901960780000005" blue="0.96862745100000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemOrangeColor">
+            <color red="1" green="0.58431372550000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

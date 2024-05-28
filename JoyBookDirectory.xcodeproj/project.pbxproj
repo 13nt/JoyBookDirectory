@@ -7,15 +7,98 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9EEEE4B2E17921CF3CF9CB73 /* Pods_JoyBookDirectory.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A9408C62E3141E38C40B3FED /* Pods_JoyBookDirectory.framework */; };
+		CC1ECDBB2C05C46100E43DE7 /* APIHeaders.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC1ECDBA2C05C46100E43DE7 /* APIHeaders.swift */; };
+		CC1ECDBD2C05C58500E43DE7 /* APINetworkClients.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC1ECDBC2C05C58500E43DE7 /* APINetworkClients.swift */; };
+		CC1ECDBF2C05C59400E43DE7 /* APIDataResponseClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC1ECDBE2C05C59400E43DE7 /* APIDataResponseClient.swift */; };
+		CC1ECDC22C05C64F00E43DE7 /* Domain.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC1ECDC12C05C64F00E43DE7 /* Domain.swift */; };
+		CC1ECDC42C05CAA700E43DE7 /* BookListResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC1ECDC32C05CAA700E43DE7 /* BookListResponse.swift */; };
+		CC1ECDC62C05CE5900E43DE7 /* BookListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC1ECDC52C05CE5900E43DE7 /* BookListViewModel.swift */; };
+		CC1ECDC82C05D49400E43DE7 /* UITableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC1ECDC72C05D49400E43DE7 /* UITableView.swift */; };
+		CC1ECDCA2C05D4BD00E43DE7 /* UITableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC1ECDC92C05D4BD00E43DE7 /* UITableViewCell.swift */; };
+		CC1ECDCC2C05D4DD00E43DE7 /* UICollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC1ECDCB2C05D4DD00E43DE7 /* UICollectionView.swift */; };
+		CC1ECDCE2C05D50700E43DE7 /* UIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC1ECDCD2C05D50700E43DE7 /* UIViewController.swift */; };
+		CC1ECDD12C05D57B00E43DE7 /* AppStoryboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC1ECDD02C05D57B00E43DE7 /* AppStoryboard.swift */; };
+		CC1ECDD32C05D58800E43DE7 /* Enums.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC1ECDD22C05D58800E43DE7 /* Enums.swift */; };
+		CC1ECDD72C05DBE000E43DE7 /* CustomProgressHUD.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC1ECDD62C05DBE000E43DE7 /* CustomProgressHUD.swift */; };
+		CC1ECDD92C05E64A00E43DE7 /* BaseVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC1ECDD82C05E64A00E43DE7 /* BaseVC.swift */; };
+		CC1ECDDB2C05E68A00E43DE7 /* BaseNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC1ECDDA2C05E68A00E43DE7 /* BaseNavigationController.swift */; };
+		CC1ECDDD2C05E6B100E43DE7 /* BaseTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC1ECDDC2C05E6B100E43DE7 /* BaseTabBarController.swift */; };
+		CC1ECDDF2C05E98E00E43DE7 /* BookDetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC1ECDDE2C05E98E00E43DE7 /* BookDetailVC.swift */; };
+		CC1ECDE12C05EA1000E43DE7 /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC1ECDE02C05EA1000E43DE7 /* HomeVC.swift */; };
+		CC1ECDE62C05EADE00E43DE7 /* AuthEntry.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CC1ECDE52C05EADE00E43DE7 /* AuthEntry.storyboard */; };
+		CC1ECDE82C05EAEB00E43DE7 /* Profile.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CC1ECDE72C05EAEB00E43DE7 /* Profile.storyboard */; };
+		CC1ECDEA2C05EAFD00E43DE7 /* RegisterVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC1ECDE92C05EAFD00E43DE7 /* RegisterVC.swift */; };
+		CC1ECDEC2C05EB0C00E43DE7 /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC1ECDEB2C05EB0C00E43DE7 /* LoginVC.swift */; };
+		CC1ECDEE2C05ED0000E43DE7 /* ProfileVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC1ECDED2C05ED0000E43DE7 /* ProfileVC.swift */; };
+		CC1ECDF32C05F25400E43DE7 /* TopNavView.xib in Resources */ = {isa = PBXBuildFile; fileRef = CC1ECDF22C05F25400E43DE7 /* TopNavView.xib */; };
+		CC1ECDF52C05F26400E43DE7 /* TopNavView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC1ECDF42C05F26400E43DE7 /* TopNavView.swift */; };
+		CC1ECDF72C05F32E00E43DE7 /* UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC1ECDF62C05F32E00E43DE7 /* UIView.swift */; };
+		CC1ECDF92C06004100E43DE7 /* BookListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC1ECDF82C06004100E43DE7 /* BookListTableViewCell.swift */; };
+		CC1ECDFB2C06004D00E43DE7 /* BookListTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CC1ECDFA2C06004D00E43DE7 /* BookListTableViewCell.xib */; };
+		CC1ECDFD2C0622C200E43DE7 /* RoundedShadowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC1ECDFC2C0622C200E43DE7 /* RoundedShadowView.swift */; };
+		CC1ECE002C062D6400E43DE7 /* SearchBookVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC1ECDFF2C062D6400E43DE7 /* SearchBookVC.swift */; };
+		CC1ECE022C062D7300E43DE7 /* Search.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CC1ECE012C062D7300E43DE7 /* Search.storyboard */; };
+		CC1ECE042C06334E00E43DE7 /* SearchView.xib in Resources */ = {isa = PBXBuildFile; fileRef = CC1ECE032C06334E00E43DE7 /* SearchView.xib */; };
+		CC1ECE062C06335B00E43DE7 /* SearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC1ECE052C06335B00E43DE7 /* SearchView.swift */; };
+		CC1ECE082C0633AA00E43DE7 /* TextFieldsClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC1ECE072C0633AA00E43DE7 /* TextFieldsClass.swift */; };
+		CC1ECE0A2C063E2300E43DE7 /* BookDetailResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC1ECE092C063E2300E43DE7 /* BookDetailResponse.swift */; };
+		CC1ECE0C2C0640C100E43DE7 /* BookDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC1ECE0B2C0640C100E43DE7 /* BookDetailViewModel.swift */; };
 		CCC7712D2C0492F200D180E7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCC7712C2C0492F200D180E7 /* AppDelegate.swift */; };
 		CCC7712F2C0492F200D180E7 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCC7712E2C0492F200D180E7 /* SceneDelegate.swift */; };
 		CCC771312C0492F200D180E7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCC771302C0492F200D180E7 /* ViewController.swift */; };
 		CCC771342C0492F200D180E7 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = CCC771332C0492F200D180E7 /* Base */; };
 		CCC771362C0492F400D180E7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CCC771352C0492F400D180E7 /* Assets.xcassets */; };
 		CCC771392C0492F400D180E7 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = CCC771382C0492F400D180E7 /* Base */; };
+		CCF7E1F72C06683F001E0D7A /* GradientUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCF7E1F62C06683F001E0D7A /* GradientUIView.swift */; };
+		CCF7E1FA2C067361001E0D7A /* User.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = CCF7E1F82C067361001E0D7A /* User.xcdatamodeld */; };
+		CCF7E1FD2C06762D001E0D7A /* CoreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCF7E1FC2C06762D001E0D7A /* CoreDataManager.swift */; };
+		CCF7E1FF2C067661001E0D7A /* DataHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCF7E1FE2C067661001E0D7A /* DataHelper.swift */; };
+		CCF7E2012C068753001E0D7A /* PublicFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCF7E2002C068753001E0D7A /* PublicFunctions.swift */; };
+		CCF7E2032C068E91001E0D7A /* UserDefaults.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCF7E2022C068E91001E0D7A /* UserDefaults.swift */; };
+		CCF7E2052C06918E001E0D7A /* InitialVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCF7E2042C06918E001E0D7A /* InitialVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		007E88F08DC5E2E9CB32740E /* Pods-JoyBookDirectory.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JoyBookDirectory.release.xcconfig"; path = "Target Support Files/Pods-JoyBookDirectory/Pods-JoyBookDirectory.release.xcconfig"; sourceTree = "<group>"; };
+		37E80CEC57B97F0E1AB3FE29 /* Pods-JoyBookDirectory.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JoyBookDirectory.debug.xcconfig"; path = "Target Support Files/Pods-JoyBookDirectory/Pods-JoyBookDirectory.debug.xcconfig"; sourceTree = "<group>"; };
+		A9408C62E3141E38C40B3FED /* Pods_JoyBookDirectory.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_JoyBookDirectory.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CC1ECDBA2C05C46100E43DE7 /* APIHeaders.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIHeaders.swift; sourceTree = "<group>"; };
+		CC1ECDBC2C05C58500E43DE7 /* APINetworkClients.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APINetworkClients.swift; sourceTree = "<group>"; };
+		CC1ECDBE2C05C59400E43DE7 /* APIDataResponseClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIDataResponseClient.swift; sourceTree = "<group>"; };
+		CC1ECDC12C05C64F00E43DE7 /* Domain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Domain.swift; sourceTree = "<group>"; };
+		CC1ECDC32C05CAA700E43DE7 /* BookListResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookListResponse.swift; sourceTree = "<group>"; };
+		CC1ECDC52C05CE5900E43DE7 /* BookListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookListViewModel.swift; sourceTree = "<group>"; };
+		CC1ECDC72C05D49400E43DE7 /* UITableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITableView.swift; sourceTree = "<group>"; };
+		CC1ECDC92C05D4BD00E43DE7 /* UITableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITableViewCell.swift; sourceTree = "<group>"; };
+		CC1ECDCB2C05D4DD00E43DE7 /* UICollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UICollectionView.swift; sourceTree = "<group>"; };
+		CC1ECDCD2C05D50700E43DE7 /* UIViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewController.swift; sourceTree = "<group>"; };
+		CC1ECDD02C05D57B00E43DE7 /* AppStoryboard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppStoryboard.swift; sourceTree = "<group>"; };
+		CC1ECDD22C05D58800E43DE7 /* Enums.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Enums.swift; sourceTree = "<group>"; };
+		CC1ECDD62C05DBE000E43DE7 /* CustomProgressHUD.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomProgressHUD.swift; sourceTree = "<group>"; };
+		CC1ECDD82C05E64A00E43DE7 /* BaseVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseVC.swift; sourceTree = "<group>"; };
+		CC1ECDDA2C05E68A00E43DE7 /* BaseNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseNavigationController.swift; sourceTree = "<group>"; };
+		CC1ECDDC2C05E6B100E43DE7 /* BaseTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseTabBarController.swift; sourceTree = "<group>"; };
+		CC1ECDDE2C05E98E00E43DE7 /* BookDetailVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookDetailVC.swift; sourceTree = "<group>"; };
+		CC1ECDE02C05EA1000E43DE7 /* HomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVC.swift; sourceTree = "<group>"; };
+		CC1ECDE52C05EADE00E43DE7 /* AuthEntry.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = AuthEntry.storyboard; sourceTree = "<group>"; };
+		CC1ECDE72C05EAEB00E43DE7 /* Profile.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Profile.storyboard; sourceTree = "<group>"; };
+		CC1ECDE92C05EAFD00E43DE7 /* RegisterVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterVC.swift; sourceTree = "<group>"; };
+		CC1ECDEB2C05EB0C00E43DE7 /* LoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
+		CC1ECDED2C05ED0000E43DE7 /* ProfileVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileVC.swift; sourceTree = "<group>"; };
+		CC1ECDF22C05F25400E43DE7 /* TopNavView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TopNavView.xib; sourceTree = "<group>"; };
+		CC1ECDF42C05F26400E43DE7 /* TopNavView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopNavView.swift; sourceTree = "<group>"; };
+		CC1ECDF62C05F32E00E43DE7 /* UIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIView.swift; sourceTree = "<group>"; };
+		CC1ECDF82C06004100E43DE7 /* BookListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookListTableViewCell.swift; sourceTree = "<group>"; };
+		CC1ECDFA2C06004D00E43DE7 /* BookListTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BookListTableViewCell.xib; sourceTree = "<group>"; };
+		CC1ECDFC2C0622C200E43DE7 /* RoundedShadowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedShadowView.swift; sourceTree = "<group>"; };
+		CC1ECDFF2C062D6400E43DE7 /* SearchBookVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBookVC.swift; sourceTree = "<group>"; };
+		CC1ECE012C062D7300E43DE7 /* Search.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Search.storyboard; sourceTree = "<group>"; };
+		CC1ECE032C06334E00E43DE7 /* SearchView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SearchView.xib; sourceTree = "<group>"; };
+		CC1ECE052C06335B00E43DE7 /* SearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchView.swift; sourceTree = "<group>"; };
+		CC1ECE072C0633AA00E43DE7 /* TextFieldsClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFieldsClass.swift; sourceTree = "<group>"; };
+		CC1ECE092C063E2300E43DE7 /* BookDetailResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookDetailResponse.swift; sourceTree = "<group>"; };
+		CC1ECE0B2C0640C100E43DE7 /* BookDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookDetailViewModel.swift; sourceTree = "<group>"; };
 		CCC771292C0492F200D180E7 /* JoyBookDirectory.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JoyBookDirectory.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CCC7712C2C0492F200D180E7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CCC7712E2C0492F200D180E7 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +107,13 @@
 		CCC771352C0492F400D180E7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CCC771382C0492F400D180E7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CCC7713A2C0492F400D180E7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CCF7E1F62C06683F001E0D7A /* GradientUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientUIView.swift; sourceTree = "<group>"; };
+		CCF7E1F92C067361001E0D7A /* User.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = User.xcdatamodel; sourceTree = "<group>"; };
+		CCF7E1FC2C06762D001E0D7A /* CoreDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataManager.swift; sourceTree = "<group>"; };
+		CCF7E1FE2C067661001E0D7A /* DataHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataHelper.swift; sourceTree = "<group>"; };
+		CCF7E2002C068753001E0D7A /* PublicFunctions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PublicFunctions.swift; sourceTree = "<group>"; };
+		CCF7E2022C068E91001E0D7A /* UserDefaults.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaults.swift; sourceTree = "<group>"; };
+		CCF7E2042C06918E001E0D7A /* InitialVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InitialVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +121,114 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9EEEE4B2E17921CF3CF9CB73 /* Pods_JoyBookDirectory.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5A8D026E15662E768FC2B8CC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A9408C62E3141E38C40B3FED /* Pods_JoyBookDirectory.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CC1ECDC02C05C63900E43DE7 /* Routers */ = {
+			isa = PBXGroup;
+			children = (
+				CC1ECDC12C05C64F00E43DE7 /* Domain.swift */,
+			);
+			path = Routers;
+			sourceTree = "<group>";
+		};
+		CC1ECDCF2C05D55900E43DE7 /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				CC1ECDD02C05D57B00E43DE7 /* AppStoryboard.swift */,
+				CC1ECDD22C05D58800E43DE7 /* Enums.swift */,
+			);
+			path = Constants;
+			sourceTree = "<group>";
+		};
+		CC1ECDE22C05EAAB00E43DE7 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				CCC771322C0492F200D180E7 /* Main.storyboard */,
+				CC1ECDDE2C05E98E00E43DE7 /* BookDetailVC.swift */,
+				CC1ECDE02C05EA1000E43DE7 /* HomeVC.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		CC1ECDE32C05EAB900E43DE7 /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				CC1ECDE72C05EAEB00E43DE7 /* Profile.storyboard */,
+				CC1ECDED2C05ED0000E43DE7 /* ProfileVC.swift */,
+			);
+			path = Profile;
+			sourceTree = "<group>";
+		};
+		CC1ECDE42C05EAC700E43DE7 /* AuthEntry */ = {
+			isa = PBXGroup;
+			children = (
+				CC1ECDE52C05EADE00E43DE7 /* AuthEntry.storyboard */,
+				CC1ECDE92C05EAFD00E43DE7 /* RegisterVC.swift */,
+				CC1ECDEB2C05EB0C00E43DE7 /* LoginVC.swift */,
+				CCF7E2042C06918E001E0D7A /* InitialVC.swift */,
+			);
+			path = AuthEntry;
+			sourceTree = "<group>";
+		};
+		CC1ECDEF2C05F20B00E43DE7 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				CC1ECE0D2C06462800E43DE7 /* ReusableCell */,
+				CC1ECDF02C05F21500E43DE7 /* ReuseableView */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		CC1ECDF02C05F21500E43DE7 /* ReuseableView */ = {
+			isa = PBXGroup;
+			children = (
+				CC1ECDF22C05F25400E43DE7 /* TopNavView.xib */,
+				CC1ECDF42C05F26400E43DE7 /* TopNavView.swift */,
+				CC1ECE032C06334E00E43DE7 /* SearchView.xib */,
+				CC1ECE052C06335B00E43DE7 /* SearchView.swift */,
+			);
+			path = ReuseableView;
+			sourceTree = "<group>";
+		};
+		CC1ECDFE2C062D4200E43DE7 /* Search */ = {
+			isa = PBXGroup;
+			children = (
+				CC1ECDFF2C062D6400E43DE7 /* SearchBookVC.swift */,
+				CC1ECE012C062D7300E43DE7 /* Search.storyboard */,
+			);
+			path = Search;
+			sourceTree = "<group>";
+		};
+		CC1ECE0D2C06462800E43DE7 /* ReusableCell */ = {
+			isa = PBXGroup;
+			children = (
+				CC1ECDF82C06004100E43DE7 /* BookListTableViewCell.swift */,
+				CC1ECDFA2C06004D00E43DE7 /* BookListTableViewCell.xib */,
+			);
+			path = ReusableCell;
+			sourceTree = "<group>";
+		};
 		CCC771202C0492F200D180E7 = {
 			isa = PBXGroup;
 			children = (
+				CCF7E1F82C067361001E0D7A /* User.xcdatamodeld */,
 				CCC7712B2C0492F200D180E7 /* JoyBookDirectory */,
 				CCC7712A2C0492F200D180E7 /* Products */,
+				FCFE8E79B6CA04796AB67AD8 /* Pods */,
+				5A8D026E15662E768FC2B8CC /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,15 +243,125 @@
 		CCC7712B2C0492F200D180E7 /* JoyBookDirectory */ = {
 			isa = PBXGroup;
 			children = (
-				CCC7712C2C0492F200D180E7 /* AppDelegate.swift */,
-				CCC7712E2C0492F200D180E7 /* SceneDelegate.swift */,
+				CC1ECDCF2C05D55900E43DE7 /* Constants */,
+				CCC771472C04AE1E00D180E7 /* SupportingFiles */,
+				CCC771462C04AE0800D180E7 /* Base */,
+				CCC771452C04ADF900D180E7 /* Extensions */,
+				CCC771442C04ADD900D180E7 /* Models */,
+				CCC771432C04ADCF00D180E7 /* ViewModels */,
+				CCC771422C04933F00D180E7 /* Services */,
+				CCC771412C04932C00D180E7 /* UIs&VCs */,
+				CCC771402C04932600D180E7 /* Util */,
 				CCC771302C0492F200D180E7 /* ViewController.swift */,
-				CCC771322C0492F200D180E7 /* Main.storyboard */,
-				CCC771352C0492F400D180E7 /* Assets.xcassets */,
 				CCC771372C0492F400D180E7 /* LaunchScreen.storyboard */,
 				CCC7713A2C0492F400D180E7 /* Info.plist */,
 			);
 			path = JoyBookDirectory;
+			sourceTree = "<group>";
+		};
+		CCC771402C04932600D180E7 /* Util */ = {
+			isa = PBXGroup;
+			children = (
+				CCF7E1FB2C067608001E0D7A /* LocalStorage(Cache) */,
+				CC1ECDD62C05DBE000E43DE7 /* CustomProgressHUD.swift */,
+				CC1ECDFC2C0622C200E43DE7 /* RoundedShadowView.swift */,
+				CC1ECE072C0633AA00E43DE7 /* TextFieldsClass.swift */,
+				CCF7E1F62C06683F001E0D7A /* GradientUIView.swift */,
+				CCF7E2002C068753001E0D7A /* PublicFunctions.swift */,
+			);
+			path = Util;
+			sourceTree = "<group>";
+		};
+		CCC771412C04932C00D180E7 /* UIs&VCs */ = {
+			isa = PBXGroup;
+			children = (
+				CC1ECDFE2C062D4200E43DE7 /* Search */,
+				CC1ECDEF2C05F20B00E43DE7 /* Common */,
+				CC1ECDE42C05EAC700E43DE7 /* AuthEntry */,
+				CC1ECDE32C05EAB900E43DE7 /* Profile */,
+				CC1ECDE22C05EAAB00E43DE7 /* Home */,
+			);
+			path = "UIs&VCs";
+			sourceTree = "<group>";
+		};
+		CCC771422C04933F00D180E7 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				CC1ECDC02C05C63900E43DE7 /* Routers */,
+				CC1ECDBA2C05C46100E43DE7 /* APIHeaders.swift */,
+				CC1ECDBC2C05C58500E43DE7 /* APINetworkClients.swift */,
+				CC1ECDBE2C05C59400E43DE7 /* APIDataResponseClient.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		CCC771432C04ADCF00D180E7 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				CC1ECDC52C05CE5900E43DE7 /* BookListViewModel.swift */,
+				CC1ECE0B2C0640C100E43DE7 /* BookDetailViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		CCC771442C04ADD900D180E7 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				CC1ECDC32C05CAA700E43DE7 /* BookListResponse.swift */,
+				CC1ECE092C063E2300E43DE7 /* BookDetailResponse.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		CCC771452C04ADF900D180E7 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				CC1ECDC72C05D49400E43DE7 /* UITableView.swift */,
+				CC1ECDC92C05D4BD00E43DE7 /* UITableViewCell.swift */,
+				CC1ECDCB2C05D4DD00E43DE7 /* UICollectionView.swift */,
+				CC1ECDCD2C05D50700E43DE7 /* UIViewController.swift */,
+				CC1ECDF62C05F32E00E43DE7 /* UIView.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		CCC771462C04AE0800D180E7 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				CC1ECDD82C05E64A00E43DE7 /* BaseVC.swift */,
+				CC1ECDDA2C05E68A00E43DE7 /* BaseNavigationController.swift */,
+				CC1ECDDC2C05E6B100E43DE7 /* BaseTabBarController.swift */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		CCC771472C04AE1E00D180E7 /* SupportingFiles */ = {
+			isa = PBXGroup;
+			children = (
+				CCC7712C2C0492F200D180E7 /* AppDelegate.swift */,
+				CCC7712E2C0492F200D180E7 /* SceneDelegate.swift */,
+				CCC771352C0492F400D180E7 /* Assets.xcassets */,
+			);
+			path = SupportingFiles;
+			sourceTree = "<group>";
+		};
+		CCF7E1FB2C067608001E0D7A /* LocalStorage(Cache) */ = {
+			isa = PBXGroup;
+			children = (
+				CCF7E1FC2C06762D001E0D7A /* CoreDataManager.swift */,
+				CCF7E1FE2C067661001E0D7A /* DataHelper.swift */,
+				CCF7E2022C068E91001E0D7A /* UserDefaults.swift */,
+			);
+			path = "LocalStorage(Cache)";
+			sourceTree = "<group>";
+		};
+		FCFE8E79B6CA04796AB67AD8 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				37E80CEC57B97F0E1AB3FE29 /* Pods-JoyBookDirectory.debug.xcconfig */,
+				007E88F08DC5E2E9CB32740E /* Pods-JoyBookDirectory.release.xcconfig */,
+			);
+			path = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,9 +371,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = CCC7713D2C0492F400D180E7 /* Build configuration list for PBXNativeTarget "JoyBookDirectory" */;
 			buildPhases = (
+				63BD1E94CB27690913050410 /* [CP] Check Pods Manifest.lock */,
 				CCC771252C0492F200D180E7 /* Sources */,
 				CCC771262C0492F200D180E7 /* Frameworks */,
 				CCC771272C0492F200D180E7 /* Resources */,
+				52340B73CBF10666BEC96B37 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -125,22 +424,107 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CC1ECDF32C05F25400E43DE7 /* TopNavView.xib in Resources */,
 				CCC771362C0492F400D180E7 /* Assets.xcassets in Resources */,
 				CCC771392C0492F400D180E7 /* Base in Resources */,
+				CC1ECDE82C05EAEB00E43DE7 /* Profile.storyboard in Resources */,
 				CCC771342C0492F200D180E7 /* Base in Resources */,
+				CC1ECE042C06334E00E43DE7 /* SearchView.xib in Resources */,
+				CC1ECDE62C05EADE00E43DE7 /* AuthEntry.storyboard in Resources */,
+				CC1ECE022C062D7300E43DE7 /* Search.storyboard in Resources */,
+				CC1ECDFB2C06004D00E43DE7 /* BookListTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		52340B73CBF10666BEC96B37 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-JoyBookDirectory/Pods-JoyBookDirectory-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-JoyBookDirectory/Pods-JoyBookDirectory-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-JoyBookDirectory/Pods-JoyBookDirectory-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		63BD1E94CB27690913050410 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-JoyBookDirectory-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		CCC771252C0492F200D180E7 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CC1ECE0A2C063E2300E43DE7 /* BookDetailResponse.swift in Sources */,
+				CC1ECDF72C05F32E00E43DE7 /* UIView.swift in Sources */,
 				CCC771312C0492F200D180E7 /* ViewController.swift in Sources */,
+				CC1ECDD92C05E64A00E43DE7 /* BaseVC.swift in Sources */,
+				CCF7E1FA2C067361001E0D7A /* User.xcdatamodeld in Sources */,
+				CCF7E2052C06918E001E0D7A /* InitialVC.swift in Sources */,
+				CC1ECDDD2C05E6B100E43DE7 /* BaseTabBarController.swift in Sources */,
+				CCF7E1FD2C06762D001E0D7A /* CoreDataManager.swift in Sources */,
+				CC1ECDBB2C05C46100E43DE7 /* APIHeaders.swift in Sources */,
+				CC1ECDBF2C05C59400E43DE7 /* APIDataResponseClient.swift in Sources */,
+				CC1ECDD72C05DBE000E43DE7 /* CustomProgressHUD.swift in Sources */,
+				CC1ECDBD2C05C58500E43DE7 /* APINetworkClients.swift in Sources */,
 				CCC7712D2C0492F200D180E7 /* AppDelegate.swift in Sources */,
+				CC1ECDCA2C05D4BD00E43DE7 /* UITableViewCell.swift in Sources */,
+				CC1ECE062C06335B00E43DE7 /* SearchView.swift in Sources */,
+				CC1ECDCC2C05D4DD00E43DE7 /* UICollectionView.swift in Sources */,
+				CC1ECE002C062D6400E43DE7 /* SearchBookVC.swift in Sources */,
+				CC1ECDD32C05D58800E43DE7 /* Enums.swift in Sources */,
+				CCF7E2032C068E91001E0D7A /* UserDefaults.swift in Sources */,
+				CC1ECDF52C05F26400E43DE7 /* TopNavView.swift in Sources */,
+				CC1ECDF92C06004100E43DE7 /* BookListTableViewCell.swift in Sources */,
+				CC1ECDCE2C05D50700E43DE7 /* UIViewController.swift in Sources */,
+				CC1ECDEE2C05ED0000E43DE7 /* ProfileVC.swift in Sources */,
+				CC1ECDD12C05D57B00E43DE7 /* AppStoryboard.swift in Sources */,
+				CC1ECDC62C05CE5900E43DE7 /* BookListViewModel.swift in Sources */,
 				CCC7712F2C0492F200D180E7 /* SceneDelegate.swift in Sources */,
+				CCF7E1FF2C067661001E0D7A /* DataHelper.swift in Sources */,
+				CC1ECDEA2C05EAFD00E43DE7 /* RegisterVC.swift in Sources */,
+				CC1ECDFD2C0622C200E43DE7 /* RoundedShadowView.swift in Sources */,
+				CC1ECDE12C05EA1000E43DE7 /* HomeVC.swift in Sources */,
+				CC1ECDDB2C05E68A00E43DE7 /* BaseNavigationController.swift in Sources */,
+				CC1ECE082C0633AA00E43DE7 /* TextFieldsClass.swift in Sources */,
+				CCF7E2012C068753001E0D7A /* PublicFunctions.swift in Sources */,
+				CC1ECDDF2C05E98E00E43DE7 /* BookDetailVC.swift in Sources */,
+				CC1ECDC82C05D49400E43DE7 /* UITableView.swift in Sources */,
+				CC1ECE0C2C0640C100E43DE7 /* BookDetailViewModel.swift in Sources */,
+				CCF7E1F72C06683F001E0D7A /* GradientUIView.swift in Sources */,
+				CC1ECDC22C05C64F00E43DE7 /* Domain.swift in Sources */,
+				CC1ECDC42C05CAA700E43DE7 /* BookListResponse.swift in Sources */,
+				CC1ECDEC2C05EB0C00E43DE7 /* LoginVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -203,7 +587,7 @@
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
-				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu17;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -266,7 +650,7 @@
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu17;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
@@ -287,6 +671,7 @@
 		};
 		CCC7713E2C0492F400D180E7 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 37E80CEC57B97F0E1AB3FE29 /* Pods-JoyBookDirectory.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -295,17 +680,19 @@
 				DEVELOPMENT_TEAM = 2PWY4S2B8X;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = JoyBookDirectory/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = JoyBookDirectory;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.aentbhone.MovieList.JoyBookDirectory;
+				PRODUCT_BUNDLE_IDENTIFIER = com.aentbhone.JoyBookDirectory;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -315,6 +702,7 @@
 		};
 		CCC7713F2C0492F400D180E7 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 007E88F08DC5E2E9CB32740E /* Pods-JoyBookDirectory.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -323,17 +711,19 @@
 				DEVELOPMENT_TEAM = 2PWY4S2B8X;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = JoyBookDirectory/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = JoyBookDirectory;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.aentbhone.MovieList.JoyBookDirectory;
+				PRODUCT_BUNDLE_IDENTIFIER = com.aentbhone.JoyBookDirectory;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -363,6 +753,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		CCF7E1F82C067361001E0D7A /* User.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				CCF7E1F92C067361001E0D7A /* User.xcdatamodel */,
+			);
+			currentVersion = CCF7E1F92C067361001E0D7A /* User.xcdatamodel */;
+			path = User.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = CCC771212C0492F200D180E7 /* Project object */;
 }
