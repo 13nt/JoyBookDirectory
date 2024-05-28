@@ -14,8 +14,8 @@ JoyBookDirectory iOS app allows users to see recent popular books, search for bo
 ~ Local Database -> CoreData is used to store user register information locally.
 
 
-# Third-Party Pods
-------------------
+# Third-Party Libraries(Depandancies)
+-------------------------------------
 ~ IQKeyboardManagerSwift: For easier keyboard management.
 
 ~ Kingfisher: For downloading and caching images from the web.
@@ -27,6 +27,8 @@ JoyBookDirectory iOS app allows users to see recent popular books, search for bo
 ~ ObjectMapper: For easy mapping of JSON data to objects.
 
 ~ SwiftyJSON: For simpler JSON parsing in Swift.
+
+~ CoreData(Internal Package) -> To Store User Registered Data Locally
 
 
 # Installation
@@ -64,19 +66,3 @@ JoyBookDirectory iOS app allows users to see recent popular books, search for bo
 
 3 - Swift 5.0+
 
-
-# Dependencies(3rd Libraries usage)
------------------------------------
-1 - IQKeyboardManagerSwift
-
-2 - Kingfisher (version 6.0.0)
-
-3 - Alamofire
-
-4 - PromiseKit
-
-5 -ObjectMapper
-
-6 - SwiftyJSON
-
-7 - CoreData(Internal Package)
