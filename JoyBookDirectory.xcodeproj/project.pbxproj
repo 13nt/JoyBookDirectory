@@ -27,10 +27,8 @@
 		CC1ECDDF2C05E98E00E43DE7 /* BookDetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC1ECDDE2C05E98E00E43DE7 /* BookDetailVC.swift */; };
 		CC1ECDE12C05EA1000E43DE7 /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC1ECDE02C05EA1000E43DE7 /* HomeVC.swift */; };
 		CC1ECDE62C05EADE00E43DE7 /* AuthEntry.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CC1ECDE52C05EADE00E43DE7 /* AuthEntry.storyboard */; };
-		CC1ECDE82C05EAEB00E43DE7 /* Profile.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CC1ECDE72C05EAEB00E43DE7 /* Profile.storyboard */; };
 		CC1ECDEA2C05EAFD00E43DE7 /* RegisterVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC1ECDE92C05EAFD00E43DE7 /* RegisterVC.swift */; };
 		CC1ECDEC2C05EB0C00E43DE7 /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC1ECDEB2C05EB0C00E43DE7 /* LoginVC.swift */; };
-		CC1ECDEE2C05ED0000E43DE7 /* ProfileVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC1ECDED2C05ED0000E43DE7 /* ProfileVC.swift */; };
 		CC1ECDF32C05F25400E43DE7 /* TopNavView.xib in Resources */ = {isa = PBXBuildFile; fileRef = CC1ECDF22C05F25400E43DE7 /* TopNavView.xib */; };
 		CC1ECDF52C05F26400E43DE7 /* TopNavView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC1ECDF42C05F26400E43DE7 /* TopNavView.swift */; };
 		CC1ECDF72C05F32E00E43DE7 /* UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC1ECDF62C05F32E00E43DE7 /* UIView.swift */; };
@@ -46,7 +44,6 @@
 		CC1ECE0C2C0640C100E43DE7 /* BookDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC1ECE0B2C0640C100E43DE7 /* BookDetailViewModel.swift */; };
 		CCC7712D2C0492F200D180E7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCC7712C2C0492F200D180E7 /* AppDelegate.swift */; };
 		CCC7712F2C0492F200D180E7 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCC7712E2C0492F200D180E7 /* SceneDelegate.swift */; };
-		CCC771312C0492F200D180E7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCC771302C0492F200D180E7 /* ViewController.swift */; };
 		CCC771342C0492F200D180E7 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = CCC771332C0492F200D180E7 /* Base */; };
 		CCC771362C0492F400D180E7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CCC771352C0492F400D180E7 /* Assets.xcassets */; };
 		CCC771392C0492F400D180E7 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = CCC771382C0492F400D180E7 /* Base */; };
@@ -82,10 +79,8 @@
 		CC1ECDDE2C05E98E00E43DE7 /* BookDetailVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookDetailVC.swift; sourceTree = "<group>"; };
 		CC1ECDE02C05EA1000E43DE7 /* HomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVC.swift; sourceTree = "<group>"; };
 		CC1ECDE52C05EADE00E43DE7 /* AuthEntry.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = AuthEntry.storyboard; sourceTree = "<group>"; };
-		CC1ECDE72C05EAEB00E43DE7 /* Profile.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Profile.storyboard; sourceTree = "<group>"; };
 		CC1ECDE92C05EAFD00E43DE7 /* RegisterVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterVC.swift; sourceTree = "<group>"; };
 		CC1ECDEB2C05EB0C00E43DE7 /* LoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
-		CC1ECDED2C05ED0000E43DE7 /* ProfileVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileVC.swift; sourceTree = "<group>"; };
 		CC1ECDF22C05F25400E43DE7 /* TopNavView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TopNavView.xib; sourceTree = "<group>"; };
 		CC1ECDF42C05F26400E43DE7 /* TopNavView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopNavView.swift; sourceTree = "<group>"; };
 		CC1ECDF62C05F32E00E43DE7 /* UIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIView.swift; sourceTree = "<group>"; };
@@ -102,7 +97,6 @@
 		CCC771292C0492F200D180E7 /* JoyBookDirectory.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JoyBookDirectory.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CCC7712C2C0492F200D180E7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CCC7712E2C0492F200D180E7 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		CCC771302C0492F200D180E7 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		CCC771332C0492F200D180E7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		CCC771352C0492F400D180E7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CCC771382C0492F400D180E7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -161,15 +155,6 @@
 				CC1ECDE02C05EA1000E43DE7 /* HomeVC.swift */,
 			);
 			path = Home;
-			sourceTree = "<group>";
-		};
-		CC1ECDE32C05EAB900E43DE7 /* Profile */ = {
-			isa = PBXGroup;
-			children = (
-				CC1ECDE72C05EAEB00E43DE7 /* Profile.storyboard */,
-				CC1ECDED2C05ED0000E43DE7 /* ProfileVC.swift */,
-			);
-			path = Profile;
 			sourceTree = "<group>";
 		};
 		CC1ECDE42C05EAC700E43DE7 /* AuthEntry */ = {
@@ -252,7 +237,6 @@
 				CCC771422C04933F00D180E7 /* Services */,
 				CCC771412C04932C00D180E7 /* UIs&VCs */,
 				CCC771402C04932600D180E7 /* Util */,
-				CCC771302C0492F200D180E7 /* ViewController.swift */,
 				CCC771372C0492F400D180E7 /* LaunchScreen.storyboard */,
 				CCC7713A2C0492F400D180E7 /* Info.plist */,
 			);
@@ -278,7 +262,6 @@
 				CC1ECDFE2C062D4200E43DE7 /* Search */,
 				CC1ECDEF2C05F20B00E43DE7 /* Common */,
 				CC1ECDE42C05EAC700E43DE7 /* AuthEntry */,
-				CC1ECDE32C05EAB900E43DE7 /* Profile */,
 				CC1ECDE22C05EAAB00E43DE7 /* Home */,
 			);
 			path = "UIs&VCs";
@@ -427,7 +410,6 @@
 				CC1ECDF32C05F25400E43DE7 /* TopNavView.xib in Resources */,
 				CCC771362C0492F400D180E7 /* Assets.xcassets in Resources */,
 				CCC771392C0492F400D180E7 /* Base in Resources */,
-				CC1ECDE82C05EAEB00E43DE7 /* Profile.storyboard in Resources */,
 				CCC771342C0492F200D180E7 /* Base in Resources */,
 				CC1ECE042C06334E00E43DE7 /* SearchView.xib in Resources */,
 				CC1ECDE62C05EADE00E43DE7 /* AuthEntry.storyboard in Resources */,
@@ -487,7 +469,6 @@
 			files = (
 				CC1ECE0A2C063E2300E43DE7 /* BookDetailResponse.swift in Sources */,
 				CC1ECDF72C05F32E00E43DE7 /* UIView.swift in Sources */,
-				CCC771312C0492F200D180E7 /* ViewController.swift in Sources */,
 				CC1ECDD92C05E64A00E43DE7 /* BaseVC.swift in Sources */,
 				CCF7E1FA2C067361001E0D7A /* User.xcdatamodeld in Sources */,
 				CCF7E2052C06918E001E0D7A /* InitialVC.swift in Sources */,
@@ -507,7 +488,6 @@
 				CC1ECDF52C05F26400E43DE7 /* TopNavView.swift in Sources */,
 				CC1ECDF92C06004100E43DE7 /* BookListTableViewCell.swift in Sources */,
 				CC1ECDCE2C05D50700E43DE7 /* UIViewController.swift in Sources */,
-				CC1ECDEE2C05ED0000E43DE7 /* ProfileVC.swift in Sources */,
 				CC1ECDD12C05D57B00E43DE7 /* AppStoryboard.swift in Sources */,
 				CC1ECDC62C05CE5900E43DE7 /* BookListViewModel.swift in Sources */,
 				CCC7712F2C0492F200D180E7 /* SceneDelegate.swift in Sources */,
